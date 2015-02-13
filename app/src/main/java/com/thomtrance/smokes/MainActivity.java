@@ -119,6 +119,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     }
 
+
+    //git test
     public void addSmoke(View v){
 
         //get datetime
@@ -153,7 +155,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         newrowid=myDB.insert(SmokeEntry.TABLE_NAME,null,cv);
 
-
         Toast.makeText(this,"Smoke added! Row ID: "+newrowid, Toast.LENGTH_LONG).show();
 
         //get current values
@@ -161,12 +162,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         String selection="smoke_date = ?";
         String[] selectArgs={sqlNOW};
 
-
         Cursor c = myDB.query(SmokeEntry.TABLE_NAME,projection,selection,selectArgs,null, null, null);
-
-
-
-
 
         int total = c.getCount();
 
