@@ -164,6 +164,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         Cursor c = myDB.query(SmokeEntry.TABLE_NAME,projection,selection,selectArgs,null, null, null);
 
+
+
+
+
         int total = c.getCount();
 
         TextView totView = (TextView) findViewById(R.id.day_total);
