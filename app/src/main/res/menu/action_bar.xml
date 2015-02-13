@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smokeApp="http://schemas.android.com/apk/res-auto"
+
+    >
+<item android:id="@+id/action_settings"
+    android:title="@string/action_settings"
+    smokeApp:showAsAction="never"
+    />
+
+    <item android:id="@+id/action_stat"
+        android:title="@string/action_stats"
+        smokeApp:showAsAction="always"
+        android:icon="@drawable/ic_action_view_as_list"
+        />
+
+    <item android:id="@+id/action_chart"
+        android:title="@string/action_chart"
+        smokeApp:showAsAction="always"
+        android:icon="@drawable/ic_action_add_to_queue"
+        />
+
+
+</menu>
